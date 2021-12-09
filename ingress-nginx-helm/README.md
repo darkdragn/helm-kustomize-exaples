@@ -47,7 +47,7 @@ templating. Helm will add those on install, which Argo will handle for us!
 helm template ingress-nginx . --post-renderer ./kustomize --values values.yaml | less
 ```
 
-3a. If you want to deploy with helm to get the feel for what is happening, run
+3. If you want to deploy with helm to get the feel for what is happening, run
 this:
 
 ```bash
