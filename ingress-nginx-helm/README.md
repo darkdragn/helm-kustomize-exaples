@@ -112,10 +112,6 @@ track the resource from kustomize for changes, but unlike an manual helm
 deploy, it doesn't add the helm annotations. Oh well, at least it's being
 tracked. 
 
-Make sure you add the configManagementPlugins to argocd-cm, since I couldn't
-find a place in the WebUI to add it, then create the app using the yaml I
-provided and finally... just relax and check it out.
-
 2. Install App
 
 
