@@ -109,7 +109,7 @@ Here's our plugin for ArgoCD: (Install in ArgoCD namespace argocd-cm ConfigMap)
 
 There's a plugin for helm2 and one for helm3, and I just checked. Argo will
 track the resource from kustomize for changes, but unlike an manual helm
-deploy, it doesn't add the helm allotations. O well, at least it's being
+deploy, it doesn't add the helm annotations. Oh well, at least it's being
 tracked. 
 
 Make sure you add the configManagementPlugins to argocd-cm, since I couldn't
