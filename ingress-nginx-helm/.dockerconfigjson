@@ -1,0 +1,1 @@
+{"auths":{"docker.example.com":{"username":"local-docker-user","password":"SuperSecretPassword"}}}
