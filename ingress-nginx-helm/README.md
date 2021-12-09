@@ -78,21 +78,7 @@ resource!!!
 
 3b. Lets just do ArgoCD Deployment!!!
 
-Here's our app
-```yaml
-project: default
-source:
-  repoURL: 'https://github.com/darkdragn/helm-kustomize-exaples.git'
-  path: ingress-nginx-helm
-  targetRevision: HEAD
-  plugin:
-    name: kustomized-helm3
-destination:
-  server: 'https://kubernetes.default.svc'
-  namespace: ingress-nginx
-```
-
-Here's our plugin for ArgoCD:
+Here's our plugin for ArgoCD: (Install in ArgoCD namespace argocd-cm ConfigMap)
 
 ```yaml
   configManagementPlugins: |
@@ -122,6 +108,20 @@ tracked.
 Make sure you add the configManagementPlugins to argocd-cm, since I couldn't
 find a place in the WebUI to add it, then create the app using the yaml I
 provided and finally... just relax and check it out.
+
+Here's our app
+```yaml
+project: default
+source:
+  repoURL: 'https://github.com/darkdragn/helm-kustomize-exaples.git'
+  path: ingress-nginx-helm
+  targetRevision: HEAD
+  plugin:
+    name: kustomized-helm3
+destination:
+  server: 'https://kubernetes.default.svc'
+  namespace: ingress-nginx
+```
 
 
 ## Todo
