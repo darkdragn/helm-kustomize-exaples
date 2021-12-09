@@ -1,3 +1,8 @@
+
+## I don't care, Chris, just get to the argo part!!!
+
+[Here you go](#argocd)
+
 ## Description
 
 This is an example using kustomize to add registry-access secret. The
@@ -76,7 +81,8 @@ Argo, it'll be checking for changes and tell you if someone edited the
 resource!!!
 
 
-3b. Lets just do ArgoCD Deployment!!!
+## ArgoCD
+### Lets just do ArgoCD Deployment!!!
 
 Here's our plugin for ArgoCD: (Install in ArgoCD namespace argocd-cm ConfigMap)
 
