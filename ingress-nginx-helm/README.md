@@ -84,8 +84,9 @@ resource!!!
 ## ArgoCD
 ### Lets just do ArgoCD Deployment!!!
 
-Here's our plugin for ArgoCD: (Install in ArgoCD namespace argocd-cm ConfigMap)
+1. Install Plugin
 
+Here's our plugin for ArgoCD: (Install in ArgoCD namespace argocd-cm ConfigMap)
 ```yaml
   configManagementPlugins: |
     - name: kustomized-helm
@@ -115,6 +116,9 @@ Make sure you add the configManagementPlugins to argocd-cm, since I couldn't
 find a place in the WebUI to add it, then create the app using the yaml I
 provided and finally... just relax and check it out.
 
+2. Install App
+
+
 Here's our app
 ```yaml
 project: default
@@ -129,6 +133,8 @@ destination:
   namespace: ingress-nginx
 ```
 
+3. Check it out in ArgoCD
+4. Profit???
 
 ## Todo
 
